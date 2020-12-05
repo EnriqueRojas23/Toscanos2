@@ -1,0 +1,77 @@
+﻿body {
+    /*padding-top: 10px;
+    padding-bottom: 20px;*/
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+
+
+field-validation-error {
+    color: #b94a48;
+    display: inline-block;
+    *display: inline;
+    padding-left: 5px;
+    vertical-align: middle;
+    *zoom: 1;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    /*
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+    */
+    color: #b94a48;
+    border-color: #b94a48;
+}
+
+    .input-validation-error:focus {
+        border-color: #953b39;
+        -webkit-box-shadow: 0 0 6px #d59392;
+        -moz-box-shadow: 0 0 6px #d59392;
+        box-shadow: 0 0 6px #d59392;
+    }
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #b94a48;
+    text-align: left;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+
+
+/*Elementos del jstree*/
+.actions a {
+    background: #333;
+    color: #ccc;
+    font-size: 11px;
+    line-height: 18px;
+    border-radius: 4px;
+    padding: 0 5px;
+    text-decoration: none;
+}
+
+    .actions a:hover {
+        background: #999;
+    }
+
+
+/*style jstree*/
+
+.jstree-select-custom {
+    color: #8b0000;
+    font-weight: bold;
+}

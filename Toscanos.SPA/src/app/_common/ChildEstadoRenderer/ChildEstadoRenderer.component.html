@@ -1,0 +1,9 @@
+<span style="height: 20px" *ngIf="this.params.data.estado  == 'Programado'" class="label warning" >
+  {{ this.params.data.estado }}
+</span>
+<span style="height: 20px" *ngIf="this.params.data.estado  == 'En ruta'" class="label danger" >
+    {{ this.params.data.estado }}
+  </span>
+  <span style="height: 20px" *ngIf="this.params.data.estado  == 'Entregado'" class="label success" >
+      {{ this.params.data.estado }}
+    </span>

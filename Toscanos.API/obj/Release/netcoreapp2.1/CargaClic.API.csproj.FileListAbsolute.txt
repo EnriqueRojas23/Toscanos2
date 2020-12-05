@@ -1,0 +1,105 @@
+D:\RIA\RIA\2018\Proyecto Avengers\app\cargaclic.api\bin\Release\netcoreapp2.1\CargaClic.API.deps.json
+D:\RIA\RIA\2018\Proyecto Avengers\app\cargaclic.api\bin\Release\netcoreapp2.1\CargaClic.API.runtimeconfig.json
+D:\RIA\RIA\2018\Proyecto Avengers\app\cargaclic.api\bin\Release\netcoreapp2.1\CargaClic.API.runtimeconfig.dev.json
+D:\RIA\RIA\2018\Proyecto Avengers\app\cargaclic.api\bin\Release\netcoreapp2.1\CargaClic.API.dll
+D:\RIA\RIA\2018\Proyecto Avengers\app\cargaclic.api\bin\Release\netcoreapp2.1\CargaClic.API.pdb
+D:\RIA\RIA\2018\Proyecto Avengers\app\cargaclic.api\bin\Release\netcoreapp2.1\CargaClic.Contracts.dll
+D:\RIA\RIA\2018\Proyecto Avengers\app\cargaclic.api\bin\Release\netcoreapp2.1\CargaClic.Data.dll
+D:\RIA\RIA\2018\Proyecto Avengers\app\cargaclic.api\bin\Release\netcoreapp2.1\CargaClic.Domain.dll
+D:\RIA\RIA\2018\Proyecto Avengers\app\cargaclic.api\bin\Release\netcoreapp2.1\CargaClic.Handlers.dll
+D:\RIA\RIA\2018\Proyecto Avengers\app\cargaclic.api\bin\Release\netcoreapp2.1\CargaClic.ReadRepository.dll
+D:\RIA\RIA\2018\Proyecto Avengers\app\cargaclic.api\bin\Release\netcoreapp2.1\cargaclic.repository.dll
+D:\RIA\RIA\2018\Proyecto Avengers\app\cargaclic.api\bin\Release\netcoreapp2.1\Common.dll
+D:\RIA\RIA\2018\Proyecto Avengers\app\cargaclic.api\bin\Release\netcoreapp2.1\CargaClic.Data.pdb
+D:\RIA\RIA\2018\Proyecto Avengers\app\cargaclic.api\bin\Release\netcoreapp2.1\CargaClic.Handlers.pdb
+D:\RIA\RIA\2018\Proyecto Avengers\app\cargaclic.api\bin\Release\netcoreapp2.1\Common.pdb
+D:\RIA\RIA\2018\Proyecto Avengers\app\cargaclic.api\bin\Release\netcoreapp2.1\CargaClic.Domain.pdb
+D:\RIA\RIA\2018\Proyecto Avengers\app\cargaclic.api\bin\Release\netcoreapp2.1\cargaclic.repository.pdb
+D:\RIA\RIA\2018\Proyecto Avengers\app\cargaclic.api\bin\Release\netcoreapp2.1\CargaClic.ReadRepository.pdb
+D:\RIA\RIA\2018\Proyecto Avengers\app\cargaclic.api\bin\Release\netcoreapp2.1\CargaClic.Contracts.pdb
+D:\RIA\RIA\2018\Proyecto Avengers\app\cargaclic.api\obj\Release\netcoreapp2.1\CargaClic.API.csprojAssemblyReference.cache
+D:\RIA\RIA\2018\Proyecto Avengers\app\cargaclic.api\obj\Release\netcoreapp2.1\CargaClic.API.csproj.CoreCompileInputs.cache
+D:\RIA\RIA\2018\Proyecto Avengers\app\cargaclic.api\obj\Release\netcoreapp2.1\CargaClic.API.RazorAssemblyInfo.cache
+D:\RIA\RIA\2018\Proyecto Avengers\app\cargaclic.api\obj\Release\netcoreapp2.1\CargaClic.API.RazorAssemblyInfo.cs
+D:\RIA\RIA\2018\Proyecto Avengers\app\cargaclic.api\obj\Release\netcoreapp2.1\CargaClic.API.AssemblyInfoInputs.cache
+D:\RIA\RIA\2018\Proyecto Avengers\app\cargaclic.api\obj\Release\netcoreapp2.1\CargaClic.API.AssemblyInfo.cs
+D:\RIA\RIA\2018\Proyecto Avengers\app\cargaclic.api\obj\Release\netcoreapp2.1\CargaClic.API.RazorTargetAssemblyInfo.cache
+D:\RIA\RIA\2018\Proyecto Avengers\app\cargaclic.api\obj\Release\netcoreapp2.1\CargaClic.API.csproj.CopyComplete
+D:\RIA\RIA\2018\Proyecto Avengers\app\cargaclic.api\obj\Release\netcoreapp2.1\CargaClic.API.dll
+D:\RIA\RIA\2018\Proyecto Avengers\app\cargaclic.api\obj\Release\netcoreapp2.1\CargaClic.API.pdb
+D:\RIA\RIA\2019\Proyectos\Toscanos\Trackingv1\app\App\Web\Toscanos.API\bin\Release\netcoreapp2.1\CargaClic.API.deps.json
+D:\RIA\RIA\2019\Proyectos\Toscanos\Trackingv1\app\App\Web\Toscanos.API\bin\Release\netcoreapp2.1\CargaClic.API.runtimeconfig.json
+D:\RIA\RIA\2019\Proyectos\Toscanos\Trackingv1\app\App\Web\Toscanos.API\bin\Release\netcoreapp2.1\CargaClic.API.runtimeconfig.dev.json
+D:\RIA\RIA\2019\Proyectos\Toscanos\Trackingv1\app\App\Web\Toscanos.API\bin\Release\netcoreapp2.1\CargaClic.API.dll
+D:\RIA\RIA\2019\Proyectos\Toscanos\Trackingv1\app\App\Web\Toscanos.API\bin\Release\netcoreapp2.1\CargaClic.API.pdb
+D:\RIA\RIA\2019\Proyectos\Toscanos\Trackingv1\app\App\Web\Toscanos.API\bin\Release\netcoreapp2.1\CargaClic.Contracts.dll
+D:\RIA\RIA\2019\Proyectos\Toscanos\Trackingv1\app\App\Web\Toscanos.API\bin\Release\netcoreapp2.1\CargaClic.Data.dll
+D:\RIA\RIA\2019\Proyectos\Toscanos\Trackingv1\app\App\Web\Toscanos.API\bin\Release\netcoreapp2.1\CargaClic.Domain.dll
+D:\RIA\RIA\2019\Proyectos\Toscanos\Trackingv1\app\App\Web\Toscanos.API\bin\Release\netcoreapp2.1\CargaClic.Handlers.dll
+D:\RIA\RIA\2019\Proyectos\Toscanos\Trackingv1\app\App\Web\Toscanos.API\bin\Release\netcoreapp2.1\CargaClic.ReadRepository.dll
+D:\RIA\RIA\2019\Proyectos\Toscanos\Trackingv1\app\App\Web\Toscanos.API\bin\Release\netcoreapp2.1\cargaclic.repository.dll
+D:\RIA\RIA\2019\Proyectos\Toscanos\Trackingv1\app\App\Web\Toscanos.API\bin\Release\netcoreapp2.1\Common.dll
+D:\RIA\RIA\2019\Proyectos\Toscanos\Trackingv1\app\App\Web\Toscanos.API\bin\Release\netcoreapp2.1\CargaClic.Data.pdb
+D:\RIA\RIA\2019\Proyectos\Toscanos\Trackingv1\app\App\Web\Toscanos.API\bin\Release\netcoreapp2.1\CargaClic.Handlers.pdb
+D:\RIA\RIA\2019\Proyectos\Toscanos\Trackingv1\app\App\Web\Toscanos.API\bin\Release\netcoreapp2.1\Common.pdb
+D:\RIA\RIA\2019\Proyectos\Toscanos\Trackingv1\app\App\Web\Toscanos.API\bin\Release\netcoreapp2.1\CargaClic.Domain.pdb
+D:\RIA\RIA\2019\Proyectos\Toscanos\Trackingv1\app\App\Web\Toscanos.API\bin\Release\netcoreapp2.1\cargaclic.repository.pdb
+D:\RIA\RIA\2019\Proyectos\Toscanos\Trackingv1\app\App\Web\Toscanos.API\bin\Release\netcoreapp2.1\CargaClic.ReadRepository.pdb
+D:\RIA\RIA\2019\Proyectos\Toscanos\Trackingv1\app\App\Web\Toscanos.API\bin\Release\netcoreapp2.1\CargaClic.Contracts.pdb
+D:\RIA\RIA\2019\Proyectos\Toscanos\Trackingv1\app\App\Web\Toscanos.API\obj\Release\netcoreapp2.1\CargaClic.API.csprojAssemblyReference.cache
+D:\RIA\RIA\2019\Proyectos\Toscanos\Trackingv1\app\App\Web\Toscanos.API\obj\Release\netcoreapp2.1\CargaClic.API.RazorAssemblyInfo.cache
+D:\RIA\RIA\2019\Proyectos\Toscanos\Trackingv1\app\App\Web\Toscanos.API\obj\Release\netcoreapp2.1\CargaClic.API.RazorAssemblyInfo.cs
+D:\RIA\RIA\2019\Proyectos\Toscanos\Trackingv1\app\App\Web\Toscanos.API\obj\Release\netcoreapp2.1\CargaClic.API.AssemblyInfoInputs.cache
+D:\RIA\RIA\2019\Proyectos\Toscanos\Trackingv1\app\App\Web\Toscanos.API\obj\Release\netcoreapp2.1\CargaClic.API.AssemblyInfo.cs
+D:\RIA\RIA\2019\Proyectos\Toscanos\Trackingv1\app\App\Web\Toscanos.API\obj\Release\netcoreapp2.1\CargaClic.API.RazorTargetAssemblyInfo.cache
+D:\RIA\RIA\2019\Proyectos\Toscanos\Trackingv1\app\App\Web\Toscanos.API\obj\Release\netcoreapp2.1\CargaClic.API.csproj.CopyComplete
+D:\RIA\RIA\2019\Proyectos\Toscanos\Trackingv1\app\App\Web\Toscanos.API\obj\Release\netcoreapp2.1\CargaClic.API.dll
+D:\RIA\RIA\2019\Proyectos\Toscanos\Trackingv1\app\App\Web\Toscanos.API\obj\Release\netcoreapp2.1\CargaClic.API.pdb
+D:\RIA\RIA\2019\Proyectos\Toscanos\Trackingv1\app\App\Web\Toscanos.API\bin\Release\netcoreapp2.1\appsettings.Development.json
+D:\RIA\RIA\2019\Proyectos\Toscanos\Trackingv1\app\App\Web\Toscanos.API\bin\Release\netcoreapp2.1\appsettings.json
+D:\RIA\RIA\2019\Proyectos\Toscanos\Trackingv1\app\App\Web\Toscanos.API\bin\Release\netcoreapp2.1\Data\PaginaSeedData.json
+D:\RIA\RIA\2019\Proyectos\Toscanos\Trackingv1\app\App\Web\Toscanos.API\bin\Release\netcoreapp2.1\Data\RolPaginaSeedData.json
+D:\RIA\RIA\2019\Proyectos\Toscanos\Trackingv1\app\App\Web\Toscanos.API\bin\Release\netcoreapp2.1\Data\RolSeedData.json
+D:\RIA\RIA\2019\Proyectos\Toscanos\Trackingv1\app\App\Web\Toscanos.API\bin\Release\netcoreapp2.1\Data\TablaSeedData.json
+D:\RIA\RIA\2019\Proyectos\Toscanos\Trackingv1\app\App\Web\Toscanos.API\bin\Release\netcoreapp2.1\Data\UserSeedData.json
+D:\RIA\RIA\2019\Proyectos\Toscanos\Trackingv1\app\App\Web\Toscanos.API\bin\Release\netcoreapp2.1\package-lock.json
+D:\RIA\RIA\2019\Proyectos\Toscanos\Trackingv1\app\App\Web\Toscanos.API\bin\Release\netcoreapp2.1\Properties\launchSettings.json
+D:\RIA\CodigosFuente\Toscargo\Web\Toscanos.API\bin\Release\netcoreapp2.1\appsettings.Development.json
+D:\RIA\CodigosFuente\Toscargo\Web\Toscanos.API\bin\Release\netcoreapp2.1\appsettings.json
+D:\RIA\CodigosFuente\Toscargo\Web\Toscanos.API\bin\Release\netcoreapp2.1\Data\PaginaSeedData.json
+D:\RIA\CodigosFuente\Toscargo\Web\Toscanos.API\bin\Release\netcoreapp2.1\Data\RolPaginaSeedData.json
+D:\RIA\CodigosFuente\Toscargo\Web\Toscanos.API\bin\Release\netcoreapp2.1\Data\RolSeedData.json
+D:\RIA\CodigosFuente\Toscargo\Web\Toscanos.API\bin\Release\netcoreapp2.1\Data\TablaSeedData.json
+D:\RIA\CodigosFuente\Toscargo\Web\Toscanos.API\bin\Release\netcoreapp2.1\Data\UserSeedData.json
+D:\RIA\CodigosFuente\Toscargo\Web\Toscanos.API\bin\Release\netcoreapp2.1\package-lock.json
+D:\RIA\CodigosFuente\Toscargo\Web\Toscanos.API\bin\Release\netcoreapp2.1\Properties\launchSettings.json
+D:\RIA\CodigosFuente\Toscargo\Web\Toscanos.API\bin\Release\netcoreapp2.1\CargaClic.API.deps.json
+D:\RIA\CodigosFuente\Toscargo\Web\Toscanos.API\bin\Release\netcoreapp2.1\CargaClic.API.runtimeconfig.json
+D:\RIA\CodigosFuente\Toscargo\Web\Toscanos.API\bin\Release\netcoreapp2.1\CargaClic.API.runtimeconfig.dev.json
+D:\RIA\CodigosFuente\Toscargo\Web\Toscanos.API\bin\Release\netcoreapp2.1\CargaClic.API.dll
+D:\RIA\CodigosFuente\Toscargo\Web\Toscanos.API\bin\Release\netcoreapp2.1\CargaClic.API.pdb
+D:\RIA\CodigosFuente\Toscargo\Web\Toscanos.API\bin\Release\netcoreapp2.1\CargaClic.Contracts.dll
+D:\RIA\CodigosFuente\Toscargo\Web\Toscanos.API\bin\Release\netcoreapp2.1\CargaClic.Data.dll
+D:\RIA\CodigosFuente\Toscargo\Web\Toscanos.API\bin\Release\netcoreapp2.1\CargaClic.Domain.dll
+D:\RIA\CodigosFuente\Toscargo\Web\Toscanos.API\bin\Release\netcoreapp2.1\CargaClic.Handlers.dll
+D:\RIA\CodigosFuente\Toscargo\Web\Toscanos.API\bin\Release\netcoreapp2.1\CargaClic.ReadRepository.dll
+D:\RIA\CodigosFuente\Toscargo\Web\Toscanos.API\bin\Release\netcoreapp2.1\cargaclic.repository.dll
+D:\RIA\CodigosFuente\Toscargo\Web\Toscanos.API\bin\Release\netcoreapp2.1\Common.dll
+D:\RIA\CodigosFuente\Toscargo\Web\Toscanos.API\bin\Release\netcoreapp2.1\CargaClic.Data.pdb
+D:\RIA\CodigosFuente\Toscargo\Web\Toscanos.API\bin\Release\netcoreapp2.1\CargaClic.Handlers.pdb
+D:\RIA\CodigosFuente\Toscargo\Web\Toscanos.API\bin\Release\netcoreapp2.1\Common.pdb
+D:\RIA\CodigosFuente\Toscargo\Web\Toscanos.API\bin\Release\netcoreapp2.1\CargaClic.Domain.pdb
+D:\RIA\CodigosFuente\Toscargo\Web\Toscanos.API\bin\Release\netcoreapp2.1\cargaclic.repository.pdb
+D:\RIA\CodigosFuente\Toscargo\Web\Toscanos.API\bin\Release\netcoreapp2.1\CargaClic.ReadRepository.pdb
+D:\RIA\CodigosFuente\Toscargo\Web\Toscanos.API\bin\Release\netcoreapp2.1\CargaClic.Contracts.pdb
+D:\RIA\CodigosFuente\Toscargo\Web\Toscanos.API\obj\Release\netcoreapp2.1\CargaClic.API.csprojAssemblyReference.cache
+D:\RIA\CodigosFuente\Toscargo\Web\Toscanos.API\obj\Release\netcoreapp2.1\CargaClic.API.RazorAssemblyInfo.cache
+D:\RIA\CodigosFuente\Toscargo\Web\Toscanos.API\obj\Release\netcoreapp2.1\CargaClic.API.RazorAssemblyInfo.cs
+D:\RIA\CodigosFuente\Toscargo\Web\Toscanos.API\obj\Release\netcoreapp2.1\CargaClic.API.AssemblyInfoInputs.cache
+D:\RIA\CodigosFuente\Toscargo\Web\Toscanos.API\obj\Release\netcoreapp2.1\CargaClic.API.AssemblyInfo.cs
+D:\RIA\CodigosFuente\Toscargo\Web\Toscanos.API\obj\Release\netcoreapp2.1\CargaClic.API.RazorTargetAssemblyInfo.cache
+D:\RIA\CodigosFuente\Toscargo\Web\Toscanos.API\obj\Release\netcoreapp2.1\CargaClic.API.csproj.CopyComplete
+D:\RIA\CodigosFuente\Toscargo\Web\Toscanos.API\obj\Release\netcoreapp2.1\CargaClic.API.dll
+D:\RIA\CodigosFuente\Toscargo\Web\Toscanos.API\obj\Release\netcoreapp2.1\CargaClic.API.pdb
+D:\RIA\CodigosFuente\Toscargo\Web\Toscanos.API\obj\Release\netcoreapp2.1\CargaClic.API.csproj.CoreCompileInputs.cache
+D:\RIA\CodigosFuente\Toscargo\Web\Toscanos.API\obj\Release\netcoreapp2.1\CargaClic.API.genruntimeconfig.cache

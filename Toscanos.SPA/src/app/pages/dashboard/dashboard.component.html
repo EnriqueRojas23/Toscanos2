@@ -1,0 +1,214 @@
+
+<h2 class="page-head-title"> Dashboard Órdenes de Transporte</h2> 
+<div class="light-font">
+<nav aria-label="breadcrumb" role="navigation">
+<ol class="breadcrumb primary-color">
+    <li class="breadcrumb-item active">* Los gráficos a continuación visualizan datos de todos los despachos entregados y estimados en el rango de fecha seleccionado</li>
+    </ol>
+    </nav>
+    </div>
+
+<div class="main-content container-fluid ">
+  <div class="col-md-12">
+
+    <div class="be-content docs">
+      <aside class="page-aside">
+        <div class="be-scroller-aside">
+          <div class="aside-content">
+            <div class="content">
+              <div class="aside-header">
+                <button class="navbar-toggle" data-target="#aside-spy" data-toggle="collapse" type="button"><span class="icon mdi mdi-caret-down"></span></button><span class="title">Dashboard</span>
+                <p class="description">Gráficas</p>
+              </div>
+            </div>
+            <div class="navbar aside-nav collapse" id="aside-spy">
+              <ul class="navbar nav"> 
+                <li class="nav-item"><a class="nav-link" (click)="position_filtros()" >Filtros</a>
+                  <!-- href="#general_structure" -->
+                </li>
+                <li class="nav-item"><a class="nav-link" (click)="position_totaldespachos()" >Total Despachos</a>
+                  <!-- href="#general_structure" -->
+                </li>
+                <li class="nav-item"><a class="nav-link" (click)="position_totalincidencias()" >Incidencias de Entrega</a>
+                  <!-- href="#general_structure" -->
+                </li>
+                <li class="nav-item"><a class="nav-link" (click)="position_cumplimientocita()" >Cumplimientos de Cita</a>
+                  <!-- href="#general_structure" -->
+                </li>
+            
+                <li class="nav-item"><a class="nav-link" (click)="position_cumplimientoentrega()">Cumplimiento de entrega</a>
+                 
+                </li>
+                <!-- <li class="nav-item"><a class="nav-link" (click)="position_tiemposentrega()" >Tiempos de entrega</a></li> -->
+                <!-- <li class="nav-item"><a class="nav-link" (click)="position_daysofweek()"  >Días de semana de entrega</a></li> -->
+
+                <li class="nav-item"><a class="nav-link" (click)="position_encuesta()" >Encuesta de Satisfacción</a>
+                  <!-- href="#general_structure" -->
+                </li>
+                <!-- <li class="nav-item"><a class="nav-link" (click)="position_otsxmanifiesto()">OTs por Manifiesto</a></li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <div class="main-content container-fluid">
+                  <div class="card card-border-color card-border-color-primary">
+                      <div class="card-header">
+                          <i class="fa fa-info-circle"></i>
+                                <b> Filtro de búsqueda  </b>  
+                          </div>
+                      <div class="card-body">
+                          <div class="row">
+                              <div class="ui-g-12 ui-md-3">
+                                  <h5>Cliente:</h5>
+                                    <p-dropdown [options]="clientes"  [(ngModel)]="selectedCliente" 
+                                            scrollHeight="40vh"   [style]="{'width':'100%'}" [autoWidth]="false" [resetFilterOnHide]="true" 
+                                            [hideTransitionOptions]="'0ms'"
+                                            [showTransitionOptions]="'0ms'" 
+                                            placeholder="seleccione un cliente"  
+                                            filter="true">
+                                        <ng-template let-item pTemplate="selectedItem">
+                                            <span style="vertical-align:middle;">{{item.label}}</span>
+                                        </ng-template>
+                                    </p-dropdown>
+                              </div>
+                          
+                          
+                              <div class="ui-g-12 ui-md-3">
+                                  <h5>Inicio:</h5>
+                                  <p-calendar [(ngModel)]="dateInicio"  [locale]="es" dateFormat="dd/mm/yy"></p-calendar>
+                              </div>
+                              <div class="ui-g-12 ui-md-3">
+                                  <h5>Fin:</h5>
+                                  <p-calendar [(ngModel)]="dateFin"  [locale]="es" dateFormat="dd/mm/yy"></p-calendar>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-md-2 offset-8">
+                                      <button   pButton iconPos="left" label="Buscar" icon="fa fa-search"   (click)="buscar()"  type="button"></button>
+                              </div>
+                              <!-- <div class="col-md-2">
+                                      <button type="button" pButton icon="pi pi-file-excel" iconPos="left" label="EXCEL" (click)="exportExcel()" class="ui-button-success"></button>
+                              </div> -->
+                          </div>
+                      </div>
+                  </div>
+
+
+
+                  <div class="card card-border-color card-border-color-primary">
+                        <div class="card-header">
+                            <i class="fa fa-info-circle"></i>
+                              <b> Gráficas  </b>  
+                        </div>
+                    
+                    
+                    
+                        
+                                    <div id="general_structure"  class="row">
+
+                                    <div class="mt-5  col-md-7">
+                                    <div class="widget widget-tile bg-white">
+                                      <div class="chart sparkline" id="spark2"></div>
+                                      <div class="data-info">
+                                        <div class="report-title">TOTAL DE DESPACHOS</div>
+                                        <div *ngIf="chart3">
+                                            <canvas width="100" height="100" id="canvas3">{{ chart3 }}</canvas>
+                                         </div>
+                                      </div>
+
+                                      </div>
+                                    </div>
+                                    <div class="mt-5  col-md-7">
+                                      <div class="widget widget-tile bg-white">
+                                        <div class="chart sparkline" id="spark2"></div>
+                                        <div class="data-info">
+                                          <div class="report-title">INCIDENCIAS DE ENTREGA</div>
+                                          <div *ngIf="chart2">
+                                              <canvas width="100" height="100" id="canvas2">{{ chart2 }}</canvas>
+                                            </div>
+                                        </div>
+
+                                        </div>
+                                      </div>
+
+                                    </div>
+                                    <div  id="getting_started" class="row">
+
+                                      <div class="col-md-6">
+                                        <div class="widget widget-tile bg-white">
+                                          <div class="chart sparkline" id="spark2"></div>
+                                          <div class="data-info">
+                                            <div class="report-title">CUMPLIMIENTO DE CITA</div>
+                                            <div *ngIf="chart20">
+                                                <canvas width="250" height="200" id="canvas20">{{ chart20 }}</canvas>
+                                              </div>
+                                          </div>
+  
+                                          </div>
+                                        </div>
+                            
+  
+                                      </div> 
+                                    <div  id="getting_started" class="row">
+
+                                    <div class="col-md-6">
+                                      <div class="widget widget-tile bg-white">
+                                        <div class="chart sparkline" id="spark2"></div>
+                                        <div class="data-info">
+                                          <div class="report-title">CUMPLIMIENTO DE ENTREGA</div>
+                                          <div *ngIf="chart4">
+                                              <canvas width="250" height="200" id="canvas4">{{ chart4 }}</canvas>
+                                            </div>
+                                        </div>
+
+                                        </div>
+                                      </div>
+                          
+
+                                    </div> 
+                                     <!-- <div id="plugins" class="row">
+                                        <div class="col-md-12">
+                                          <div class="widget widget-tile bg-white">
+                                            <div class="chart sparkline" id="spark2"></div>
+                                            <div class="data-info">
+                                              <div class="report-title">TIEMPOS DE ENTREGA</div>
+                                              <div *ngIf="chart5">
+                                                  <canvas width="200" height="100" id="canvas5">{{ chart5 }}</canvas>
+                                                </div>
+                                            </div>
+                                            </div>
+                                          </div>
+                                    </div> -->
+                                    <!-- <div class="row">
+                                    <div class="col-md-12">
+                                      <div class="widget widget-tile bg-white">
+                                        <div class="chart sparkline" id="spark2"></div>
+                                        <div class="data-info">
+                                          <div class="report-title">DÍA DE SEMANA QUE SE REALIZÓ LA ENTREGA</div>
+                                          <div *ngIf="chart6">
+                                              <canvas width="200" height="80" id="canvas6">{{ chart6 }}</canvas>
+                                            </div>
+                                        </div>
+                                        </div>
+                                      </div>
+                                    </div> -->
+                                    <div class="row">
+                                      <div class="col-md-12">
+                                        <div class="widget widget-tile bg-white">
+                                          <div class="chart sparkline" id="spark2"></div>
+                                          <div class="data-info">
+                                            <div class="report-title">RESULTADOS DE ENCUESTA</div>
+                                            <div *ngIf="chart21">
+                                                <canvas width="200" height="80" id="canvas21">{{ chart21 }}</canvas>
+                                              </div>
+                                          </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                  </div>
+
+          </div>
+        </div>
+  </div>
+</div>

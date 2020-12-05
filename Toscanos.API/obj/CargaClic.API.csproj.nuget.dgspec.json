@@ -1,0 +1,628 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Toscanos.API\\CargaClic.API.csproj": {}
+  },
+  "projects": {
+    "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Common\\Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Common\\Common.csproj",
+        "projectName": "Common",
+        "projectPath": "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Common\\Common.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "runtime.native.System.Data.SqlClient.sni": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Data\\CargaClic.Data\\CargaClic.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Data\\CargaClic.Data\\CargaClic.Data.csproj",
+        "projectName": "CargaClic.Data",
+        "projectPath": "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Data\\CargaClic.Data\\CargaClic.Data.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Data\\CargaClic.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Common\\Common.csproj": {
+                "projectPath": "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Common\\Common.csproj"
+              },
+              "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Domain\\CargaClic.Domain\\CargaClic.Domain.csproj": {
+                "projectPath": "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Domain\\CargaClic.Domain\\CargaClic.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[1.50.5, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.1.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[2.1.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.1.4, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Domain\\CargaClic.Domain\\CargaClic.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Domain\\CargaClic.Domain\\CargaClic.Domain.csproj",
+        "projectName": "CargaClic.Domain",
+        "projectPath": "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Domain\\CargaClic.Domain\\CargaClic.Domain.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Domain\\CargaClic.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Common\\Common.csproj": {
+                "projectPath": "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Common\\Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.1.8, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Escritura\\CargaCLic.repository\\cargaclic.repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Escritura\\CargaCLic.repository\\cargaclic.repository.csproj",
+        "projectName": "cargaclic.repository",
+        "projectPath": "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Escritura\\CargaCLic.repository\\cargaclic.repository.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Escritura\\CargaCLic.repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Common\\Common.csproj": {
+                "projectPath": "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Common\\Common.csproj"
+              },
+              "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Data\\CargaClic.Data\\CargaClic.Data.csproj": {
+                "projectPath": "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Data\\CargaClic.Data\\CargaClic.Data.csproj"
+              },
+              "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Domain\\CargaClic.Domain\\CargaClic.Domain.csproj": {
+                "projectPath": "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Domain\\CargaClic.Domain\\CargaClic.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[1.50.5, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.1.8, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Lectura\\CargaCLic.Contracts\\CargaClic.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Lectura\\CargaCLic.Contracts\\CargaClic.Contracts.csproj",
+        "projectName": "CargaClic.Contracts",
+        "projectPath": "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Lectura\\CargaCLic.Contracts\\CargaClic.Contracts.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Lectura\\CargaCLic.Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Common\\Common.csproj": {
+                "projectPath": "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Common\\Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Lectura\\CargaClic.Handlers\\CargaClic.Handlers.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Lectura\\CargaClic.Handlers\\CargaClic.Handlers.csproj",
+        "projectName": "CargaClic.Handlers",
+        "projectPath": "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Lectura\\CargaClic.Handlers\\CargaClic.Handlers.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Lectura\\CargaClic.Handlers\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Common\\Common.csproj": {
+                "projectPath": "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Common\\Common.csproj"
+              },
+              "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Data\\CargaClic.Data\\CargaClic.Data.csproj": {
+                "projectPath": "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Data\\CargaClic.Data\\CargaClic.Data.csproj"
+              },
+              "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Lectura\\CargaCLic.Contracts\\CargaClic.Contracts.csproj": {
+                "projectPath": "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Lectura\\CargaCLic.Contracts\\CargaClic.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Lectura\\CargaClic.ReadRepository\\CargaClic.ReadRepository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Lectura\\CargaClic.ReadRepository\\CargaClic.ReadRepository.csproj",
+        "projectName": "CargaClic.ReadRepository",
+        "projectPath": "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Lectura\\CargaClic.ReadRepository\\CargaClic.ReadRepository.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Lectura\\CargaClic.ReadRepository\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Common\\Common.csproj": {
+                "projectPath": "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Common\\Common.csproj"
+              },
+              "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Data\\CargaClic.Data\\CargaClic.Data.csproj": {
+                "projectPath": "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Data\\CargaClic.Data\\CargaClic.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.6.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Toscanos.API\\CargaClic.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Toscanos.API\\CargaClic.API.csproj",
+        "projectName": "CargaClic.API",
+        "projectPath": "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Toscanos.API\\CargaClic.API.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Toscanos.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Common\\Common.csproj": {
+                "projectPath": "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Common\\Common.csproj"
+              },
+              "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Data\\CargaClic.Data\\CargaClic.Data.csproj": {
+                "projectPath": "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Data\\CargaClic.Data\\CargaClic.Data.csproj"
+              },
+              "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Domain\\CargaClic.Domain\\CargaClic.Domain.csproj": {
+                "projectPath": "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Domain\\CargaClic.Domain\\CargaClic.Domain.csproj"
+              },
+              "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Escritura\\CargaCLic.repository\\cargaclic.repository.csproj": {
+                "projectPath": "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Escritura\\CargaCLic.repository\\cargaclic.repository.csproj"
+              },
+              "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Lectura\\CargaClic.Handlers\\CargaClic.Handlers.csproj": {
+                "projectPath": "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Lectura\\CargaClic.Handlers\\CargaClic.Handlers.csproj"
+              },
+              "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Lectura\\CargaClic.ReadRepository\\CargaClic.ReadRepository.csproj": {
+                "projectPath": "D:\\RIA\\CodigosFuente\\Toscargo\\Web\\Lectura\\CargaClic.ReadRepository\\CargaClic.ReadRepository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "DocumentFormat.OpenXml": {
+              "target": "Package",
+              "version": "[2.9.1, )"
+            },
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.1, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Authentication.Abstractions": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.1.8, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[3.2.0, )"
+            },
+            "Serilog.Extensions.Logging": {
+              "target": "Package",
+              "version": "[3.0.2-dev-10265, )"
+            },
+            "Serilog.Extensions.Logging.File": {
+              "target": "Package",
+              "version": "[2.0.0-dev-00039, )"
+            },
+            "log4net": {
+              "target": "Package",
+              "version": "[2.0.8, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

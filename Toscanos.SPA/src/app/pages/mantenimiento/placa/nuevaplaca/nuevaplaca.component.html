@@ -1,0 +1,107 @@
+<div class="page-head">
+  <h2 class="page-head-title">Mantenimiento de Placas </h2>
+  <nav aria-label="breadcrumb" role="navigation">
+    <ol class="breadcrumb page-head-nav">
+      <li class="breadcrumb-item"><a href="#">Mantenimiento</a></li>
+      <li class="breadcrumb-item"><a [routerLink]="['/mantenimiento/listadocliente']" routerLinkActive="router-link-active" >Listado de Placas</a></li>
+      <li class="breadcrumb-item active">Nuevo Placa</li>
+    </ol>
+  </nav>
+</div>
+<div class="main-content container-fluid">
+
+  
+    <div class="col-md-12">
+      <div class="card card-border-color card-border-color-primary">
+        <div class="card-header card-header-divider">Datos de la Placa<span class="card-subtitle">Nueva Placa de sistema</span></div>
+        <div class="card-body ">
+          <form #f="ngForm"  (ngSubmit)="registrar(f)" >
+
+            
+             <div class="input-div">
+                <label class="col-12 col-sm-3 col-form-label text-sm-right" for="proveedorid">Proveedor</label>
+                <mat-form-field class="input-form-field col-12 col-sm-8 col-lg-6">
+                    <mat-select  [(value)]="model.proveedorId" >
+                      <mat-option  *ngFor="let pow of proveedores"  [value]="pow.val">
+                          {{pow.viewValue}}
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                  <mat-spinner *ngIf="ProveedorLoaded === false"   [diameter]="30"></mat-spinner>
+              </div>
+
+
+            
+            <div class="input-div">
+              <label class="col-12 col-sm-3 col-form-label text-sm-right" for="tipocamion">Marca de Vehículo</label>
+              <mat-form-field class="input-form-field col-12 col-sm-8 col-lg-6">
+                  <mat-select  [(value)]="model.marcaid" >
+                    <mat-option  *ngFor="let pow of marcaVehiculo"  [value]="pow.val">
+                        {{pow.viewValue}}
+                    </mat-option>
+                  </mat-select>
+                </mat-form-field>
+                <mat-spinner *ngIf="MarcaLoaded === false"   [diameter]="30"></mat-spinner>
+            </div>
+
+            <div class="input-div">
+              <label class="col-12 col-sm-3 col-form-label text-sm-right" for="tipocamion">Tipo de Vehículo</label>
+              <mat-form-field class="input-form-field col-12 col-sm-8 col-lg-6">
+                  <mat-select  [(value)]="model.tipoid" >
+                    <mat-option *ngFor="let pow of tipoVehiculo"  [value]="pow.val">
+                        {{pow.viewValue}}
+                    </mat-option>
+                  </mat-select>
+                </mat-form-field>
+                <mat-spinner *ngIf="TipoLoaded === false"   [diameter]="30"></mat-spinner>
+            </div>
+    
+
+
+          
+        
+            <div class="input-div">
+              <label class="col-12 col-sm-3 col-form-label text-sm-right" for="placa">Placa</label>
+              <mat-form-field  class="input-form-field col-12 col-sm-8 col-lg-6">
+                <input matInput autocomplete="off"  minlength="4" maxlength="6" required [(ngModel)]="model.placa"  #placa="ngModel" placeholder="Placa del vehículo"  name="placa" type="text">
+              </mat-form-field>
+            </div>
+
+
+            <div class="input-div">
+              <label class="col-12 col-sm-3 col-form-label text-sm-right" for="pesobruto">Peso Bruto</label>
+              <mat-form-field  class="input-form-field col-12 col-sm-8 col-lg-6">
+                <input matInput autocomplete="off"  minlength="4" maxlength="6" required [(ngModel)]="model.pesobruto"  #pesobruto="ngModel" placeholder="Peso bruto"  name="pesobruto" type="text">
+              </mat-form-field>
+            </div>
+
+            <div class="input-div">
+              <label class="col-12 col-sm-3 col-form-label text-sm-right" for="volumen">Volumen</label>
+              <mat-form-field  class="input-form-field col-12 col-sm-8 col-lg-6">
+                <input matInput autocomplete="off"  minlength="2" maxlength="6" required [(ngModel)]="model.volumen"  #volumen="ngModel" placeholder="Volumen"  name="volumen" type="text">
+              </mat-form-field>
+            </div>
+
+            <div class="input-div">
+              <label class="col-12 col-sm-3 col-form-label text-sm-right" for="confVeh">confVeh</label>
+              <mat-form-field  class="input-form-field col-12 col-sm-8 col-lg-6">
+                <input matInput autocomplete="off"  minlength="4" maxlength="6" required [(ngModel)]="model.confVeh"  #confVeh="ngModel" placeholder="confVeh"  name="confVeh" type="text">
+              </mat-form-field>
+            </div>
+
+
+          
+
+              <div class="row pt-2 pt-sm-5 mt-1">
+                    <div class="col-sm-6 pl-0">
+                      <p class="text-right">
+                        <button  [disabled]="!f.valid" class="btn btn-space btn-primary"  type="submit">Guardar</button>
+                        <!-- <button  (click)="cancel()" class="btn btn-space btn-secondary">Cancel</button>  -->
+                      </p>
+                    </div>
+                  </div>
+          </form>
+        </div>
+        </div>
+      </div>
+  </div>

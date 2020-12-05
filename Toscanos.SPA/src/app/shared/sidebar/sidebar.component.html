@@ -1,0 +1,90 @@
+<nav id="sidebar" class="sidebar" role="navigation">
+    <div class="js-sidebar-content">
+        <header class="logo hidden-sm-down">
+                <!-- <img class="logo-img" style="margin-top: 5px" src="../../../assets/img/logo-app-final.png" alt="logo"  height="100">           -->
+            <a href="">T-Track</a>
+        </header>
+   
+        <ul class="sidebar-nav">
+            <li>
+                <a class="collapsed" [routerLink]="['/dashboard']" data-toggle="collapse" data-parent="#sidebar">
+                        <span class="icon">
+                            <i class="fa fa-desktop"></i>
+                        </span>
+                      Dashboard
+                    <!-- <i class="toggle fa fa-angle-down"></i> -->
+                </a>
+                <!-- <ul id="sidebar-dashboard" class="collapse">
+                    <li><a >Dashboard</a></li>
+                    <li><a href="widgets.html">Widgets</a></li>
+                </ul> -->
+            </li>
+            <!-- <li>
+                <a class="collapsed" [routerLink]="['/activity']" data-toggle="collapse" data-parent="#sidebar">
+                        <span class="icon">
+                            <i class="fa fa-desktop"></i>
+                        </span>
+                      Activity
+                    
+                </a>
+        
+            </li> -->
+        </ul>   
+    </div>
+    <h5 class="sidebar-nav-title">Menú <a class="action-link" href="#"><i class="glyphicon glyphicon-refresh"></i></a></h5>
+                <ul class="sidebar-nav" id="side-menu">
+                        <li  [ngClass]="{active: activeRouteMenu(menu.link)}"  *ngFor="let menu of authService.menu" >
+                            <a  href="#">
+                                <span class="icon"><i [class]="menu.icono"></i> </span>
+                                <span class="nav-lavel"> {{ menu.descripcion }} </span>
+                                <i class="toggle fa fa-angle-down"></i>
+                            </a>
+                            <ul id="sidebar-sub-levels" class="nav nav-second-level" >
+                                <li    [ngClass]="{active: activeRoute(submenu.link)}" *ngFor='let submenu of menu.submenu'>
+                                    <a  *ngIf="submenu.visible"  [routerLink]="[ submenu.link ]">{{ submenu.descripcion }}</a>
+                                </li> 
+                            </ul>
+                        </li>
+                </ul>
+    <h5 class="sidebar-nav-title">Reportes <a class="action-link" href="#"><i class="glyphicon glyphicon-plus"></i></a></h5>
+    <ul class="sidebar-labels">
+        <li>
+            <a href="#">
+                <i class="fa fa-circle text-warning mr-xs"></i>
+                <span class="label-name">Reporte General</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="fa fa-circle text-gray mr-xs"></i>
+                <span class="label-name">Reporte de Órdenes</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="fa fa-circle text-danger mr-xs"></i>
+                <span class="label-name">Reporte Específico</span>
+            </a>
+        </li>
+    </ul>
+   
+    <div class="sidebar-alerts">
+        <div class="alert fade in">
+            <a href="#" class="close" data-dismiss="alert" aria-hidden="true">&times;</a>
+            <span class="text-white fw-semi-bold">Sales Report</span> <br>
+            <div class="bg-gray-transparent progress-bar">
+                <progress class="progress progress-xs progress-bar-gray-light mt-xs mb-0" value="100" max="100" style="width: 16%"></progress>
+            </div>
+            <small>Calculating x-axis bias... 65%</small>
+        </div>
+        <div class="alert fade in">
+            <a href="#" class="close" data-dismiss="alert" aria-hidden="true">&times;</a>
+            <span class="text-white fw-semi-bold">Personal Responsibility</span> <br>
+            <div class="bg-gray-transparent progress-bar">
+                <progress class="progress progress-xs progress-danger mt-xs mb-0" value="100" max="100" style="width: 23%"></progress>
+            </div>
+            <small>Provide required notes</small>
+        </div>
+    </div>
+
+</nav>

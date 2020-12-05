@@ -1,0 +1,51 @@
+<div class="page-head">
+  <h2 class="page-head-title"> Reporte de Servicio de {{ servicios[0].fecha_carga }}</h2>
+  <nav aria-label="breadcrumb" role="navigation">
+    <ol class="breadcrumb page-head-nav">
+      <li class="breadcrumb-item"><a href="#">Reporte de servicio </a></li>
+      
+    </ol>
+  </nav>
+</div>
+        <div class="main-content container-fluid">
+
+
+<div class="row" *ngFor="let item of this.servicios">
+  <section class=" widget widget-card bg-light col-12  ">
+    <div class="widget-body clearfix">
+        <div class="bg-gray text-dark">
+            <div class="col-xs-1">
+              <span class="widget-icon">
+                  <i class="fa fa-id-card"></i>
+              </span>
+          </div>
+          <div class="col-xs-2">
+            <h5 class="no-margin"> </h5>
+            <p class="h3 no-margin fw-normal"> {{ item.razon_social }} </p>
+          </div>
+          <div class="col-xs-2">
+            <!-- <h5 class="no-margin">Servicios Atendidos </h5> -->
+            <p class="h3 no-margin fw-normal">{{ item.ots }} Entregas </p>
+          </div>
+          <!-- <div class="col-xs-3">
+            <h6 class="no-margin">Servicios no Atendidos </h6>
+            <p class="h3 no-margin fw-normal">{{ model.total_ots  }} </p>
+          </div> -->
+          <div class="col-xs-3">
+            <h6 class="no-margin"></h6>
+            <p class="h3 no-margin fw-normal"> S/. {{ item.valorizado | number:'1.0-0'  }} Valorizado </p>
+          </div>
+          <div class="col-xs-3">
+            <h6 class="no-margin"></h6>
+            <p class="h3 no-margin fw-normal"> S/. {{ item.costo | number:'1.0-0' }} Costo</p>
+          </div>
+         
+        </div>
+    </div>
+  </section>
+</div>
+
+
+
+
+</div>

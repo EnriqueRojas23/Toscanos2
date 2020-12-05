@@ -1,0 +1,337 @@
+<div class="page-head">
+  <h2 class="page-head-title">Actividad Diaria [ {{ model.fecha }} ] </h2>
+  <nav aria-label="breadcrumb" role="navigation">
+    <ol class="breadcrumb page-head-nav">
+      <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+      <li class="breadcrumb-item active">Unidades</li>
+    </ol>
+  </nav>
+</div>
+        <div class="main-content container-fluid">
+
+
+
+<div class="row col-12">
+    <section class=" widget widget-card bg-gray col-4  ">
+        <div class="widget-body clearfix">
+            <div class="row text-white">
+                <div class="col-xs-3">
+                    <span class="widget-icon">
+                        <i class="fa fa-truck"></i>
+                    </span>
+                </div>
+                <div class="col-xs-9">
+                    <h4 class="no-margin">PROVINCIAS</h4>
+                    <p class="h2 no-margin fw-normal">{{ model.provincias  }} Manifiestos</p>
+                </div>
+            </div>
+
+            <div class="bg-gray text-white">
+                <div class="col-xs-3">
+                    <span class="widget-icon">
+                        <i class="fa fa-clock-o"></i>
+                    </span>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                      <p id="dia" class="h2 no-margin color fw-normal">{{ model.provincias_recojo  }}</p>
+                      <h6 class="no-margin">Recojo (s) </h6>
+                  </div>
+
+
+              </div>
+            </div>
+
+        </div>
+    </section>
+    <section class=" widget widget-card bg-primary col-4   ">
+      <div class="widget-body clearfix">
+          <div class="row text-white">
+              <div class="col-xs-3">
+                  <span class="widget-icon">
+                      <i class="fa fa-truck"></i>
+                  </span>
+              </div>
+              <div class="col-xs-9">
+                  <h4 class="no-margin">LOCALES</h4>
+                  <p class="h2 no-margin fw-normal">{{ model.locales  }} Manifiestos</p>
+              </div>
+          </div>
+
+          <div class="bg-primary text-white">
+              <div class="col-xs-3">
+                  <span class="widget-icon">
+                      <i class="fa fa-clock-o"></i>
+                  </span>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                    <p id="dia" class="h2 no-margin color fw-normal">{{ model.locales_recojo  }}</p>
+                    <h6 class="no-margin">Recojo (s) </h6>
+                </div>
+
+
+            </div>
+          </div>
+
+      </div>
+    </section>
+    <section class=" widget widget-card bg-secondary col-4   ">
+      <div class="widget-body clearfix">
+          <div class="row text-white">
+              <div class="col-xs-3">
+                  <span class="widget-icon">
+                      <i class="fa fa-truck"></i>
+                  </span>
+              </div>
+              <div class="col-xs-9">
+                  <h6 class="no-margin">ÚLTIMA MILLA</h6>
+                  <p class="h2 no-margin fw-normal">{{ model.ultimamilla  }} Manifiestos</p>
+              </div>
+          </div>
+
+          <div class="bg-secondary text-white">
+              <div class="col-xs-3">
+                  <span class="widget-icon">
+                      <i class="fa fa-clock-o"></i>
+                  </span>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <p id="dia" class="h2 no-margin color fw-normal">{{ model.ultimamilla_recojo  }}</p>
+                      <h6 class="no-margin">Recojo (s) </h6>
+                  </div>
+
+
+              </div>
+          </div>
+
+      </div>
+    </section>
+</div>
+ 
+
+
+<div class="row">
+    <section class=" widget widget-card bg-gray col-4  ">
+      <div class="widget-body clearfix">
+          <div class="bg-gray text-white">
+            <div class="col-xs-3">
+              <span class="widget-icon">
+                  <i class="fa fa-user"></i>
+              </span>
+          </div>
+              <div class="row">
+
+                <div class="chart-table col-12"> <!--  pt-6 -->
+                  <table>
+                    <tbody class="no-border-x">
+                    <tr *ngFor="let product of provincias">
+                      <td> {{ product.razon_social }} </td>
+                      <td ><font color="#fff">{{ product.total }} </font></td>
+                    </tr>
+                    
+                  </tbody>
+                  </table>
+                </div>
+              
+              </div>
+          </div>
+
+      </div>
+    </section>
+    <section class=" widget widget-card bg-primary col-4  ">
+    <div class="widget-body clearfix">
+        <div class="bg-primary text-white">
+            <div class="col-xs-3">
+                <span class="widget-icon">
+                    <i class="fa fa-user"></i>
+                </span>
+            </div>
+            <div class="row">
+
+              <div class="chart-table col-12"> <!--  pt-6 -->
+                <table>
+                  <tbody class="no-border-x">
+                  <tr *ngFor="let product of local">
+                    <td> {{ product.razon_social }} </td>
+                    <td>{{ product.total }} </td>
+                  </tr>
+                  
+                </tbody>
+                </table>
+              </div>
+            
+            </div>
+        </div>
+
+    </div>
+    </section>
+    <section class=" widget widget-card bg-secondary col-4  ">
+    <div class="widget-body clearfix">
+
+        <div class="bg-secondary text-white">
+            <div class="col-xs-3">
+                <span class="widget-icon">
+                    <i class="fa fa-user"></i>
+                </span>
+            </div>
+            <div class="row">
+
+              <div class="chart-table col-12"> <!--  pt-6 -->
+                <table>
+                  <tbody class="no-border-x">
+                  <tr *ngFor="let product of ultimamilla">
+                    <td> {{ product.razon_social }} </td>
+                    <td>{{ product.total }} </td>
+                  </tr>
+                  
+                </tbody>
+                </table>
+              </div>
+            
+            </div>
+        </div>
+
+    </div>
+    </section>
+</div>
+
+<div class="row">
+  <section class=" widget widget-card bg-gray col-12  ">
+    <div class="widget-body clearfix">
+        <div class="bg-gray text-white">
+            <div class="col-xs-1">
+              <span class="widget-icon">
+                  <i class="fa fa-id-card"></i>
+              </span>
+          </div>
+          <div class="col-xs-2">
+            <h5 class="no-margin">OPERACION DE ÚLTIMA MILLA</h5>
+            <p class="h3 no-margin fw-normal">{{ model.vehiculosenruta  }} Vehículo(s) en ruta</p>
+          </div>
+          <div class="col-xs-3">
+            <h6 class="no-margin"></h6>
+            <p class="h3 no-margin fw-normal">{{ model.total_ots  }} Total entregas</p>
+          </div>
+          <div class="col-xs-3">
+            <h6 class="no-margin"></h6>
+            <p class="h3 no-margin fw-normal">{{ model.entregadas_ot  }} entregadas</p>
+          </div>
+          <div class="col-xs-3">
+            <h6 class="no-margin"></h6>
+            <!-- <p class="h3 no-margin fw-normal">{{ (model.entregadas_ot==null?0: parseFloat(model.entregadas_ot)  /  model.total_ots==null?1:parseFloat(model.total_ots) ) * 100 }} % Gestionadas</p> -->
+            <p class="h3 no-margin fw-normal">{{ model.porcentaje }} % Gestionadas</p>
+          </div>
+        </div>
+    </div>
+  </section>
+</div>
+
+
+<div class="row">
+
+  <div class="col-6 alert alert-success alert-dismissible" role="alert">
+    <div  class="col-12 message_green"> Unidades Propias</div>
+  </div>
+  <div class="col-6 alert alert-success alert-dismissible" role="alert">
+    <div  class="col-12 message_red"> Unidades Terceros</div>
+  </div>
+  
+</div>
+<div class="row">
+    <div class="col-12 col-lg-6 col-xl-3">
+      <div class="widget widget-tile">
+          <span class="chart sparkline" id="spark2"> 10,2 </span>
+          <div class="data-info">
+            <div class="desc">Unidades asignadas  </div>
+            <div class="value">
+              <span class="indicator indicator-equal mdi mdi-chevron-right"></span><span class="number">{{ model.asignacion_vehiculo }}</span>
+            </div>
+          </div>
+      </div>
+    </div> 
+    <div class="col-12 col-lg-6 col-xl-3">
+      <div class="widget widget-tile">
+          <div class="chart sparkline" id="spark1">0,5,3,7,5,10,3,6,5,10</div> 
+          <div class="data-info">
+            <div class="desc">Unidades  disponibles </div>
+            <div class="value">
+              <span class="indicator indicator-equal mdi mdi-chevron-right"></span><span class="number">{{ model.disponibilidad_vehiculo }}</span>
+            
+            </div>
+          </div>
+        </div>
+    </div> 
+    <div class="col-12 col-lg-6 col-xl-3">
+      <div class="widget widget-tile">
+        <span class="chart sparkline" id="spark3"> 10,2 </span>
+        <div class="data-info">
+          <div class="desc">Unidades Asignadas  </div>
+          <div class="value">
+            <span class="indicator indicator-equal mdi mdi-chevron-right"></span><span class="number">{{ model.asignacion_vehiculo_terceros }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-lg-6 col-xl-3">
+  <div class="widget widget-tile">
+    <div class="chart sparkline" id="spark4">0,5,3,7,5,10,3,6,5,10</div> 
+    <div class="data-info">
+      <div class="desc">Unidades Disponibles </div>
+        <div class="value">
+        <span class="indicator indicator-equal mdi mdi-chevron-right"></span><span class="number">{{ model.disponibilidad_vehiculo_terceros }}</span>
+        </div>
+      </div>
+  </div>
+</div>
+
+</div>
+
+<!-- <div class="row">
+   <div class="chart-table col-6">
+    <table class="table  table-striped">
+      <thead class="primary">
+        <tr>
+          <th>CLIENTE</th>
+          <th>Conductor</th>
+          <th>Cliente</th>
+          <th>Estado</th>
+        </tr>
+      </thead>
+      <tbody class="no-border-x">
+        <tr *ngFor="let product of propios">
+          <td> {{ product.placa }} </td>
+          <td>{{ product.nombreCompleto }} </td>
+          <td>{{ product.razon_social }} </td>
+          <td>{{ product.nombreEstado }} </td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </div>
+  <div class="chart-table col-6"> 
+    <table class="table  table-striped">
+      <thead class="primary">
+        <tr>
+          <th>Placa</th>
+          <th>Conductor</th>
+          <th>Cliente</th>
+          <th>Estado</th>
+        </tr>
+      </thead>
+      <tbody class="no-border-x">
+        <tr *ngFor="let product of terceros">
+          <td> {{ product.placa }} </td>
+          <td>{{ product.nombreCompleto }} </td>
+          <td>{{ product.razon_social }} </td>
+          <td>{{ product.nombreEstado }} </td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </div>
+</div> -->
+
+
+</div>

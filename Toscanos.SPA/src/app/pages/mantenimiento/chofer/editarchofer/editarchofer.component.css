@@ -1,0 +1,10 @@
+.input-div{
+    display: flex;
+    margin-top: 20px;
+    
+      }
+
+input {
+    line-height: 2.00;
+    width:420px
+}

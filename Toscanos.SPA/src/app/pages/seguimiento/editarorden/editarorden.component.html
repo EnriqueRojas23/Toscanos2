@@ -1,0 +1,194 @@
+
+    <h2 class="page-head-title"> Orden de Transporte</h2> 
+    <div class="light-font">
+        <nav aria-label="breadcrumb" role="navigation">
+          <ol class="breadcrumb primary-color">
+       <li class="breadcrumb-item" [routerLink]="['/recibo/listaordenrecibo']">Listado de Órdenes de Transporte</li>
+       <li class="breadcrumb-item active">Editar Orden de Transporte</li>
+     </ol>
+   </nav> 
+ </div>
+<div class="main-content container-fluid">
+
+
+    <div class="col-md-12">
+      <div class="card card-border-color card-border-color-primary">
+        <div class="card-header">Editar Orden de Recibo<span class="card-subtitle"> Datos la orden de transporte</span></div>
+        <div class="card-body ">
+          <form #f="ngForm"  (ngSubmit)="registrar(f)" >
+            <!-- <div class="input-div">
+              <label class="col-12 col-sm-3 col-form-label text-sm-right" for="numero_ot">Destinatario </label>
+                <p-dropdown name="ddlclientes" [options]="clientes"  [(ngModel)]="model.destinatario_id" 
+                    scrollHeight="40vh" class="input-form-field  col-sm-5"    [style]="{'width':'100%'}" [autoWidth]="false" [resetFilterOnHide]="false" 
+                    [hideTransitionOptions]="'0ms'"
+                    [showTransitionOptions]="'0ms'" 
+                    placeholder="seleccione un cliente"  
+                    filter="true">
+                        <ng-template let-item pTemplate="selectedItem">
+                            <span style="vertical-align:left;">{{item.label}}</span>
+                        </ng-template>
+                        <!-- <ng-template let-item pTemplate="item">
+                          <div class="ui-helper-clearfix" style="position: relative;height: 25px;">
+                              <div style="font-size:14px;float:left;margin-top:4px">{{item.label}}</div>
+                          </div>
+                      </ng-template> 
+                  </p-dropdown>
+            </div> -->
+
+              <div class="input-div">
+                  <label class="col-12 col-sm-3 col-form-label text-sm-right" for="numero_ot">Orden Transporte</label>
+                  <mat-form-field class="input-form-field col-12 col-sm-8 col-lg-6">
+                    <input matInput disabled  minlength="3" maxlength="50"  autocomplete="off" [(ngModel)]="model.numero_ot" name="numero_ot" #numero_ot="ngModel" type="text">
+                  </mat-form-field>
+               </div>
+
+               <div class="input-div">
+                <label class="col-12 col-sm-3 col-form-label text-sm-right" for="destinatario">Destinatario</label>
+                <mat-form-field class="input-form-field col-12 col-sm-8 col-lg-6">
+                  <input matInput   minlength="5" maxlength="250"  autocomplete="off" [(ngModel)]="model.destinatario" name="destinatario" #destinatario="ngModel" type="text">
+                </mat-form-field>
+             </div>
+
+              <div class="input-div">
+                  <label class="col-12 col-sm-3 col-form-label text-sm-right" for="shipment">Shipment</label>
+                  <mat-form-field class="input-form-field col-12 col-sm-8 col-lg-6">
+                    <input matInput disabled  minlength="3" maxlength="50"  autocomplete="off" [(ngModel)]="model.shipment" name="shipment" #shipment="ngModel" type="text">
+                  </mat-form-field>
+               </div>
+              <div class="input-div">
+                  <label class="col-12 col-sm-3 col-form-label text-sm-right" for="delivery">Delivery</label>
+                  <mat-form-field class="input-form-field col-12 col-sm-8 col-lg-6">
+                    <input matInput  minlength="3" maxlength="50"  autocomplete="off" [(ngModel)]="model.delivery" name="delivery" #delivery="ngModel" type="text">
+                  </mat-form-field>
+                  <div class="alert alert-danger" *ngIf="delivery.errors  "> 
+                      <div *ngIf="delivery.errors.minlength">
+                      Debe tener mas de 3 caracteres.
+                    </div>
+                    <div *ngIf="delivery.errors.maxlength">
+                        No debe tener mas de 50 caracteres.
+                      </div>
+                  </div>
+                </div>
+                <div class="input-div">
+                    <label class="col-12 col-sm-3 col-form-label text-sm-right" for="factura">Factura</label>
+                    <mat-form-field class="input-form-field col-12 col-sm-8 col-lg-6">
+                      <input matInput  minlength="3" maxlength="50"  autocomplete="off" [(ngModel)]="model.factura" name="factura" #factura="ngModel" type="text">
+                    </mat-form-field>
+                    <div class="alert alert-danger" *ngIf="delivery.errors  "> 
+                        <div *ngIf="factura.errors.minlength">
+                        Debe tener mas de 3 caracteres.
+                      </div>
+                      <div *ngIf="factura.errors.maxlength">
+                          No debe tener mas de 50 caracteres.
+                        </div>
+                    </div>
+                  </div>
+                  <div class="input-div">
+                      <label class="col-12 col-sm-3 col-form-label text-sm-right" for="oc">OC</label>
+                      <mat-form-field class="input-form-field col-12 col-sm-8 col-lg-6">
+                        <input matInput  minlength="3" maxlength="50"  autocomplete="off" [(ngModel)]="model.oc" name="oc" #oc="ngModel" type="text">
+                      </mat-form-field>
+                      <div class="alert alert-danger" *ngIf="delivery.errors  "> 
+                          <div *ngIf="oc.errors.minlength">
+                          Debe tener mas de 3 caracteres.
+                        </div>
+                        <div *ngIf="oc.errors.maxlength">
+                            No debe tener mas de 50 caracteres.
+                          </div>
+                      </div>
+                    </div>
+                    <div class="input-div">
+                        <label class="col-12 col-sm-3 col-form-label text-sm-right" for="cantidad">Cantidad</label>
+                        <mat-form-field class="input-form-field col-12 col-sm-8 col-lg-6">
+                          <input matInput  maxlength="5" (keypress)="numberOnly($event)"  autocomplete="off" [(ngModel)]="model.cantidad" name="cantidad" #cantidad="ngModel" type="text">
+                        </mat-form-field>
+                        <div class="alert alert-danger" *ngIf="delivery.errors  "> 
+                            <div *ngIf="cantidad.errors.minlength">
+                            Debe tener mas de 3 caracteres.
+                          </div>
+                          <div *ngIf="cantidad.errors.maxlength">
+                              No debe tener mas de 50 caracteres.
+                            </div>
+                        </div>
+                      </div>
+                      <div class="input-div">
+                          <label class="col-12 col-sm-3 col-form-label text-sm-right" for="volumen">Volumen</label>
+                          <mat-form-field class="input-form-field col-12 col-sm-8 col-lg-6">
+                            <input matInput  minlength="5" required maxlength="12" appTwoDigitDecimaNumber  autocomplete="off" [(ngModel)]="model.volumen" name="volumen" #volumen="ngModel" type="number">
+                          </mat-form-field>
+                          <div class="alert alert-danger" *ngIf="delivery.errors  "> 
+                              <div *ngIf="volumen.errors.minlength">
+                              Debe tener mas de 3 caracteres.
+                            </div>
+                            <div *ngIf="volumen.errors.maxlength">
+                                No debe tener mas de 50 caracteres.
+                              </div>
+                          </div>
+                        </div>
+                        <div class="input-div">
+                            <label class="col-12 col-sm-3 col-form-label text-sm-right" for="peso">Peso</label>
+                            <mat-form-field class="input-form-field col-12 col-sm-8 col-lg-6">
+                              <input matInput  minlength="5"  appTwoDigitDecimaNumber required maxlength="12"  autocomplete="off" [(ngModel)]="model.peso" name="peso" #peso="ngModel" type="number">
+                            </mat-form-field>
+                            <div class="alert alert-danger" *ngIf="delivery.errors  "> 
+                                <div *ngIf="peso.errors.minlength">
+                                Debe tener mas de 3 caracteres.
+                              </div>
+                              <div *ngIf="peso.errors.maxlength">
+                                  No debe tener mas de 50 caracteres.
+                                </div>
+                            </div>
+                          </div>
+
+                        <div class="input-div">
+                            <label class="col-12 col-sm-3 col-form-label text-sm-right" for="fecha_carga"> Fecha Carga</label>
+                            <mat-form-field class="input-form-field col-12 col-sm-8 col-lg-6">
+                                <input matInput required type="datetime" [matDatepicker]="picker2" autocomplete="off" [(ngModel)]="model.fecha_carga" name="fecha_carga" #fecha_carga="ngModel" >
+                                <mat-datepicker-toggle matSuffix [for]="fecha_carga"></mat-datepicker-toggle>
+                                <mat-datepicker #picker2></mat-datepicker>
+                              </mat-form-field>
+                           
+                       </div>
+                       <div class="input-div">
+                        <label class="col-12 col-sm-3 col-form-label text-sm-right" for="fecha_salida"> Fecha Salida </label>
+                        <mat-form-field class="input-form-field col-12 col-sm-8 col-lg-6">
+                            <input matInput required type="datetime" [matDatepicker]="picker1" autocomplete="off" [(ngModel)]="model.fecha_salida" name="fecha_salida" #fecha_salida="ngModel" >
+                            <mat-datepicker-toggle matSuffix [for]="fecha_salida"></mat-datepicker-toggle>
+                            <mat-datepicker #picker1></mat-datepicker>
+                          </mat-form-field>
+                        
+                   </div>
+                   <div class="input-div">
+                    <label class="col-12 col-sm-3 col-form-label text-sm-right" for="fecha_entrega"> Fecha Entrega </label>
+                    <mat-form-field class="input-form-field col-12 col-sm-8 col-lg-6">
+                        <input matInput required type="datetime" [matDatepicker]="picker" autocomplete="off" [(ngModel)]="model.fecha_entrega" name="fecha_entrega" #fecha_entrega="ngModel" >
+                        <mat-datepicker-toggle matSuffix [for]="fecha_entrega"></mat-datepicker-toggle>
+                        <mat-datepicker #picker></mat-datepicker>
+                      </mat-form-field>
+                    
+               </div>
+ 
+
+   
+
+              <div class="row pt-2 pt-sm-5 mt-1">
+                <div class="col-sm-6 pl-0">
+                  <p class="text-right">
+                    <button  (click)="eliminar()" pButton [disabled]="!f.valid" class="ui-button-raised ui-button-danger" label="Eliminar" type="button"></button>
+                    <button [disabled]="!f.valid" pButton type="submit" label="Actualizar"  class="ui-button-raised ui-button-success"></button>
+                    <button pButton type="button" [routerLink]="['/seguimiento/listaorden']"  label="Cancelar" class="ui-button-raised ui-button-secondary"></button>
+                  </p>
+                </div>
+              </div>
+              
+          </form>
+        </div>
+        </div>
+      </div>
+ 
+
+</div>
+
+<p-confirmDialog acceptLabel="Si" rejectLabel="No" [style]="{ width: '30vw'}">
+    
+</p-confirmDialog>

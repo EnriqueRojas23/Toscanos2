@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="row">
+      <div class="col-md-6 offset-md-3">
+          <h1>Elegir archivo</h1>            
+          <div class="form-group">
+              <input type="file" #file name="image" (change)="fileProgress($event)" />
+          </div>
+          
+          <div  *ngIf="div_visible" >
+                <p-progressBar mode="indeterminate" [style]="{'height': '6px'}"></p-progressBar>
+          </div>
+
+          <div *ngIf="fileUploadProgress">
+              Upload progress: {{ fileUploadProgress }}
+          </div>
+
+          <div class="image-preview mb-3" *ngIf="previewUrl">
+              <img [src]="previewUrl" height="300" />                 
+          </div>
+
+          <div class="mb-3" *ngIf="uploadedFilePath">
+              {{uploadedFilePath}}
+          </div>
+
+           <div class="row">
+                <div class="form-group">
+                    <button type="button" class="btn btn-success btn-s"
+                    (click)="uploadFile(file.files)" >
+                            <span class="fa fa-upload"></span> Subir 
+                            </button>             
+                </div>
+                <div class="offset-md-3 mb-3 form-group">
+                    <button type="button" class="btn btn-info btn-s"
+                    (click)="downloadFile()" >
+                            <span class="fa fa-download"></span> Plantilla 
+                    </button>
+                </div>
+            </div>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,49 @@
+.input-div{
+    display: flex;
+    
+      }
+      .input-form-field{
+          width: 30%;
+          margin-left: 10px;
+          padding: 1px 1px;
+          border-radius: 1px;
+          }
+          .input-form-field div.mat-form-field-underline {
+              display: none;
+          }
+          .input-form-field div.mat-form-field-infix{
+              border-top: 5px;
+          }
+          .input-form-field div.mat-form-field-wrapper{
+            padding-bottom: 5px;
+        }
+        .input-form-field div.mat-form-field-suffix button{
+            height: 32px;
+            width: 32px;
+        }
+
+
+        /* .container {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            position: relative;
+            margin: 1em;
+          } */
+    
+          .mat-fab.mat-primary, .mat-flat-button.mat-primary, .mat-mini-fab.mat-primary, .mat-raised-button.mat-primary 
+          {
+            position: absolute !important; 
+            top:0px !important; 
+            left:0px !important;
+            z-index: 1000 !important;
+            background: #fdd835 !important; 
+            color: #000000 !important;
+          }

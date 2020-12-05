@@ -1,0 +1,19 @@
+
+.fw-normal {
+  font-weight: 400; }
+
+
+
+.message_red  {
+    background: #33a451;
+    padding: 20px 255px 24px ;
+    color: white;
+    font-size: 15px;
+  }
+
+  .message_green  {
+    background: #9bd09a;
+    padding: 20px 255px 24px ;
+    color: white;
+    font-size: 15px;
+  }

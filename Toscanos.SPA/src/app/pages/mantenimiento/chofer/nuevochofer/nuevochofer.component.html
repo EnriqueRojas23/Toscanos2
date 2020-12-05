@@ -1,0 +1,86 @@
+
+<div class="page-head">
+  <h2 class="page-head-title">Mantenimiento de Conductores </h2>
+ <nav aria-label="breadcrumb" role="navigation">
+   <ol class="breadcrumb page-head-nav">
+    <ol class="breadcrumb page-head-nav">
+      <!-- <li class="breadcrumb-item"><a href="#">Mantenimiento</a></li> -->
+      <li class="breadcrumb-item "> 
+        <a routerLinkActive="router-link-active"  [routerLink]="['/mantenimiento/listadoconductores']"> Listado de Conductores</a></li>
+      <li class="breadcrumb-item active">Nuevo Conductor</li> 
+    </ol>
+   </ol>
+ </nav>
+</div>
+<div class="main-content container-fluid">
+
+  
+    <div class="col-md-12">
+      <div class="card card-border-color card-border-color-primary">
+        <div class="card-header card-header-divider">Datos del Conductor<span class="card-subtitle">Nuevo conductor </span></div>
+        <div class="card-body ">
+          <form #f="ngForm"  (ngSubmit)="registrar(f)" >
+              
+        
+            <div class="input-div">
+            
+              <label class="col-12 col-sm-3 col-form-label text-sm-right" for="nombreCompleto">Nombre Completo </label>
+              <!-- style="line-height: 1.25;" -->
+                  <div class="ui-inputgroup"> 
+                      <span class="ui-inputgroup-addon"><i class="pi pi-user" ></i></span>
+                      <input name="nombreCompleto" type="text" required pInputText style="width:390px" [(ngModel)]="model.nombreCompleto"  placeholder="Nombre Completo">         
+                  </div>
+              
+            
+          </div>
+        
+
+<!--             
+            <div class="input-div">
+              <label class="col-12 col-sm-3 col-form-label text-sm-right" for="tipodocumento">Tipo de Documento</label>
+               <mat-form-field class="input-form-field  col-sm-8 col-lg-6">
+                   <mat-select  [(value)]="model.TipoDocumentoId">
+                     <mat-option  *ngFor="let pow of tipodocumento"  [value]="pow.val">
+                         {{pow.viewValue}}
+                     </mat-option>
+                   </mat-select>
+                 </mat-form-field>
+             </div> -->
+
+            <div class="input-div">
+                <label class="col-12 col-sm-3 col-form-label text-sm-right" for="dni">DNI</label>
+                <p-inputMask #dni name="dni" mask="99999999"  required size="55"   [(ngModel)]="model.dni" placeholder="99999999"></p-inputMask>   
+                <!-- <mat-form-field  class="input-form-field col-12 col-sm-8 col-lg-6">
+                  <input matInput autocomplete="off" minlength="11" maxlength="11" (keypress)="numberOnly($event)"  required [(ngModel)]="model.dni"  #dni="ngModel"   name="dni" type="text">
+                </mat-form-field> -->
+            </div>
+
+            <div class="input-div">
+              <label class="col-12 col-sm-3 col-form-label text-sm-right" for="brevete">Brevete</label>
+              
+                  <p-inputMask mask="Q99999999" size="55"  name="brevete" #brevete  [(ngModel)]="model.brevete" placeholder="Q99999999"></p-inputMask>
+                <!-- <input matInput autocomplete="off" minlength="11" maxlength="11" (keypress)="numberOnly($event)"  required [(ngModel)]="model.dni"  #dni="ngModel"   name="dni" type="text"> -->
+              
+            </div>
+
+            <div class="input-div">
+              <label class="col-12 col-sm-3 col-form-label text-sm-right" for="telefono">Teléfono</label>
+              <p-inputMask mask="999-999999" size="55" name="telefono"  [(ngModel)]="model.telefono" placeholder="999-999999"></p-inputMask>
+                <!-- <input matInput autocomplete="off" minlength="11" maxlength="11" (keypress)="numberOnly($event)"  [(ngModel)]="model.dni"  #dni="ngModel"   name="dni" type="text"> -->
+            </div>
+
+              <div class="row pt-2 pt-sm-5 mt-1">
+                    <div class="col-sm-6 pl-0">
+                      <p class="text-right">
+                        <button  [disabled]="!f.valid" class="btn btn-space btn-primary" type="submit">Guardar</button>
+                        <button  (click)="cancel()" class="btn btn-space btn-secondary">Cancel</button> 
+                      </p>
+                    </div>
+                  </div>
+                  <ngx-loading [show]="loading" [config]="{ backdropBorderRadius: '3px' }" ></ngx-loading>
+          </form>
+        </div>
+        </div>
+      </div>
+  </div>
+ 

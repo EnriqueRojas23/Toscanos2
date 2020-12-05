@@ -1,0 +1,55 @@
+
+
+  <!-- <h2 class="page-head-title"> Encuesta de Satisfacción Post-Venta</h2> -->
+  <div  class="light-font">
+  <nav aria-label="breadcrumb" role="navigation">
+    <ol class="breadcrumb primary-color">
+      <li class="breadcrumb-item active">GRUPO TCE</li>
+      <img class="logo-img" src="assets/img/Toscargo-rojo.png" alt="logo" height="100">
+    </ol>
+  </nav>
+</div>
+
+
+          <div class="main-content container-fluid">
+
+            <div class="offset-3 card card-border-color card-border-color-danger">
+               
+                  
+                <div class="row">
+                  <div class="col-md-8">
+                      <span class="page-head-title" *ngIf="terminada == 0" > Muchas gracias por ayudarnos con su calificación</span>
+                      <!-- <span class="page-head-title" *ngIf="terminada == 0" > Agregue una observación del servicio, si lo considera necesario.</span> -->
+
+                      <span class="page-head-title" *ngIf="terminada == 1" > Muchas gracias!. La encuesta ya fue contestada</span>
+                      <span class="page-head-title" *ngIf="terminada == 1" >  </span>
+                  </div>
+              </div>
+              <div class="card-body">
+                <div class="col-12"> 
+              
+                  
+                    <div class="input-div">
+                      <!-- <label class="col-12 col-sm-3 col-form-label text-sm-right" for="oc">Agregue una observación </label> -->
+                  
+                        <!-- <textarea pInputTextarea   *ngIf="terminada == 0" rows="5" cols="150"  minlength="3" maxlength="1000"  autocomplete="off" [(ngModel)]="model.observacion_satisfaccion" name="oc" #oc="ngModel" type="text">
+                        </textarea> -->
+                      
+                     
+                    </div>
+                   
+                   <!-- <div class="row pt-2 pt-sm-5 mt-1">
+                    <div class="col-sm-6 pl-0">
+                      <p class="text-right">
+                        
+                        <button class="btn-danger"  *ngIf="terminada == 0"  pButton (click)="guardar()"   >Registrar observación</button>
+                        
+                      </p>
+                    </div>
+                  </div> -->
+               </div>
+               
+             </div>
+            </div>
+           
+ 
