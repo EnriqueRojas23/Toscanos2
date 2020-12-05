@@ -20,6 +20,8 @@ namespace CargaClic.API.Dtos.Matenimiento
         public bool? activo { get; set; }
         public string documento { get; set; }
         public string recurso { get; set; }
+        public DateTime? fecha_modificacion { get; set; }
+        public int? usuario_modificacion { get; set; }
         
     }
    
